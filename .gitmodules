@@ -1,0 +1,6 @@
+[submodule "Alamofire"]
+	path = Alamofire
+	url = https://github.com/Alamofire/Alamofire.git
+[submodule "SwiftyXMLParser"]
+	path = SwiftyXMLParser
+	url = https://github.com/yahoojapan/SwiftyXMLParser.git
