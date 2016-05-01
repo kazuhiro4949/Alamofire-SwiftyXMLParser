@@ -11,6 +11,7 @@ Useful Extension to combine Alamofire and SwiftyXMLParser
 ### 1. create Cartfile
 ```
 github "Alamofire/Alamofire"
+github "yahoojapan/SwiftyXMLParser"
 github "kazuhiro4949/Alamofire-SwiftyXMLParser"
 ```
 ### 2. install
