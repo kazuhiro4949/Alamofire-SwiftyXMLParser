@@ -1,4 +1,7 @@
 # Alamofire-SwiftyXMLParser
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) ![Cocoapods compatible](https://cocoapod-badges.herokuapp.com/v/Alamofire-SwiftyXMLParser/badge.png)
+
+
 Useful Extension to combine Alamofire and SwiftyXMLParser
 
 # Requirements
