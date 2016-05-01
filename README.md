@@ -34,6 +34,7 @@ pod 'Alamofire-SwiftyXMLParser'
 ````
 
 # Example
+
 ```swift
 import Alamofire
 import Alamofire_SwiftyXMLParser
@@ -44,6 +45,25 @@ Alamofire.request(.GET, "https://itunes.apple.com/us/rss/topgrossingapplications
   }
 }
 ```
+
+# Usage
+#### 1. import Alamofire and Alamofire_SwiftyXMLParser
+```swift
+import Alamofire
+import Alamofire_SwiftyXMLParser
+```
+#### 2. call responseXML(_:)
+```swift
+let request = Alamofire.request(.GET, "https://itunes.apple.com/us/rss/topgrossingapplications/limit=10/xml")
+
+request.responseXML { response in
+   if let xml = response.result.value {
+      print(xml["rss", "channel", "title"].text)
+  }
+}
+```
+
+Alamofire callbacks a parsed value with SwiftyXMLParser.
 
 # LICENSE
 
