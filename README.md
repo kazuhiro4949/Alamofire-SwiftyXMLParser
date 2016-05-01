@@ -64,7 +64,7 @@ let request = Alamofire.request(.GET, "https://itunes.apple.com/us/rss/topgrossi
 
 request.responseXML { response in
    if let xml = response.result.value {
-      print(xml["rss", "channel", "title"].text)
+      print(xml["feed", "entry", 0, "title"].text) // outputs the top title of iTunes app raning.
   }
 }
 ```
