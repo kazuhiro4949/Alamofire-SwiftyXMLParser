@@ -5,8 +5,38 @@ Easy way to use both Alamofire and SwiftyXMLParser
 * iOS 8.0+
 * Xcode 7.0+
 
+# Installation
+## Carthage
+
+### 1. create Cartfile
+```
+github "https://github.com/kazuhiro4949/Alamofire-SwiftyXMLParser"
+```
+### 2. install
+```
+> carthage update
+```
+## CocoaPods
+
+### 1. create Podfile
+```
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+use_frameworks!
+
+pod 'Alamofire-SwiftyXMLParser'
+```
+
+### 2. install
+```
+> pod install
+````
+
 # Example
 ```swift
+import Alamofire
+import Alamofire_SwiftyXMLParser
+
 Alamofire.request(.GET, "http://news.yahoo.co.jp/pickup/rss.xml").responseXML { response in
    if let xml = response.result.value {
       print(xml["rss", "channel", "title"].text)
