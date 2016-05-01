@@ -37,6 +37,7 @@ pod 'Alamofire-SwiftyXMLParser'
 
 ```swift
 import Alamofire
+imoprt SwiftyXMLParser
 import Alamofire_SwiftyXMLParser
 
 Alamofire.request(.GET, "https://itunes.apple.com/us/rss/topgrossingapplications/limit=10/xml").responseXML { response in
@@ -47,9 +48,10 @@ Alamofire.request(.GET, "https://itunes.apple.com/us/rss/topgrossingapplications
 ```
 
 # Usage
-#### 1. import Alamofire and Alamofire_SwiftyXMLParser
+#### 1. import Alamofire, SwiftyXMLParser and Alamofire_SwiftyXMLParser
 ```swift
 import Alamofire
+imoprt SwiftyXMLParser
 import Alamofire_SwiftyXMLParser
 ```
 #### 2. call responseXML(_:)
