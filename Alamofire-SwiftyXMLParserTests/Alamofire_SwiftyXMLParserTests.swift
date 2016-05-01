@@ -7,30 +7,39 @@
 //
 
 import XCTest
-@testable import Alamofire_SwiftyXMLParser
+@testable import Alamofire
+@testable import SwiftyXMLParser
+@testable import AlamofireSwiftyXMLParser
+
 
 class Alamofire_SwiftyXMLParserTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
+    func testXMLResponseSerializer() {
+        let serializer = Request.XMLResponseSerializer()
+        let xmlStr = "<Result><Name>text</Name></Result>"
+        let data = xmlStr.dataUsingEncoding(NSUTF8StringEncoding)
+        
+        let result = serializer.serializeResponse(nil, nil, data, nil)
+        if let xml = result.value {
+            XCTAssertEqual(xml["Result", "Name"].text!, "text", "Success to serialize")
+        } else {
+            XCTAssert(false, "Fail to parse")
         }
     }
     
+    func testResponseXML() {
+        let request = Request(session: NSURLSession(), task: NSURLSessionTask())
+        request.delegate.queue.suspended = true
+        request.responseXML { _ in }
+        
+        XCTAssertEqual(request.delegate.queue.operationCount, 2, "added response operation")
+    }
 }

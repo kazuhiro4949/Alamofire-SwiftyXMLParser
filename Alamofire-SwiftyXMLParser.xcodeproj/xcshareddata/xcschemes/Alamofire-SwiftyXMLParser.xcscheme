@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6EA5CA331CD47F66002BDCF7"
-               BuildableName = "Alamofire-SwiftyXMLParser.framework"
+               BuildableName = "AlamofireSwiftyXMLParser.framework"
                BlueprintName = "Alamofire-SwiftyXMLParser"
                ReferencedContainer = "container:Alamofire-SwiftyXMLParser.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6EA5CA331CD47F66002BDCF7"
-            BuildableName = "Alamofire-SwiftyXMLParser.framework"
+            BuildableName = "AlamofireSwiftyXMLParser.framework"
             BlueprintName = "Alamofire-SwiftyXMLParser"
             ReferencedContainer = "container:Alamofire-SwiftyXMLParser.xcodeproj">
          </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6EA5CA331CD47F66002BDCF7"
-            BuildableName = "Alamofire-SwiftyXMLParser.framework"
+            BuildableName = "AlamofireSwiftyXMLParser.framework"
             BlueprintName = "Alamofire-SwiftyXMLParser"
             ReferencedContainer = "container:Alamofire-SwiftyXMLParser.xcodeproj">
          </BuildableReference>
@@ -83,7 +83,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6EA5CA331CD47F66002BDCF7"
-            BuildableName = "Alamofire-SwiftyXMLParser.framework"
+            BuildableName = "AlamofireSwiftyXMLParser.framework"
             BlueprintName = "Alamofire-SwiftyXMLParser"
             ReferencedContainer = "container:Alamofire-SwiftyXMLParser.xcodeproj">
          </BuildableReference>
