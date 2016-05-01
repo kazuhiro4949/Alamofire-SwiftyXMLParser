@@ -38,7 +38,7 @@ pod 'Alamofire-SwiftyXMLParser'
 import Alamofire
 import Alamofire_SwiftyXMLParser
 
-Alamofire.request(.GET, "http://news.yahoo.co.jp/pickup/rss.xml").responseXML { response in
+Alamofire.request(.GET, "https://itunes.apple.com/us/rss/topgrossingapplications/limit=10/xml").responseXML { response in
    if let xml = response.result.value {
       print(xml["rss", "channel", "title"].text)
   }
