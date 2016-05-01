@@ -1,9 +1,9 @@
 # Alamofire-SwiftyXMLParser
-Easy way to use both Alamofire and SwiftyXMLParser
+Useful Extension to combine Alamofire and SwiftyXMLParser
 
 # Requirements
-* iOS 8.0+
-* Xcode 7.0+
+* OS 7.0+
+* Swift 2.0+
 
 # Installation
 ## Carthage
