@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 import SwiftyXMLParser
 
-public extension Request {
+extension Request {
     
     /**
      Creates a response serializer that returns a XML object constructed from the response data using
