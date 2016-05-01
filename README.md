@@ -10,7 +10,7 @@ Easy way to use both Alamofire and SwiftyXMLParser
 
 ### 1. create Cartfile
 ```
-github "https://github.com/kazuhiro4949/Alamofire-SwiftyXMLParser"
+github "kazuhiro4949/Alamofire-SwiftyXMLParser"
 ```
 ### 2. install
 ```
